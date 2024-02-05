@@ -1,0 +1,151 @@
+/*! google fonts api  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+/*! root  */
+:root {
+  --font-1: "Playfair Display", serif;
+}
+
+/* reset code  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-1);
+}
+
+/* body  */
+body {
+  background: #bbc6fa;
+}
+
+/* quote box  */
+.quote-box {
+  background: #fff;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* heading  */
+.quote-box h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* underline after heading  */
+.quote-box h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* blockquote  */
+.quote-box blockquote {
+  font-size: 26px;
+  min-height: 110px;
+}
+
+/* quatation after and before of the quote  */
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+  content: '"';
+}
+
+/* author of the quote  */
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+
+/* hyper before author name  */
+.quote-box span::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgb(23, 124, 129);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+/* buttons div */
+.quote-box div {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* button  */
+.quote-box button {
+  background: rgb(23, 124, 229);
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid rgb(23, 124, 229);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* button-1 hover effect  */
+.quote-box button:hover {
+  background-color: gold;
+  color: red;
+  border: 2px solid red;
+}
+
+/* button-1 active effect  */
+.quote-box button:active {
+  background-color: green;
+  color: red;
+  border: 2px solid red;
+}
+
+/* button-2 icon effect  */
+.quote-box button i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* button-2  */
+.quote-box button:nth-child(2) {
+  background: transparent;
+  color: rgb(23, 124, 229);
+  border: 2px solid rgb(23, 124, 229);
+  transition: all 0.3s;
+}
+
+/* button-2 hover effect  */
+.quote-box button:nth-child(2):hover {
+  color: gold;
+  border: 2px solid gold;
+  background: red;
+}
+
+/* button-2 active effect  */
+.quote-box button:nth-child(2):active {
+  color: white;
+  border: 2px solid pink;
+  background: purple;
+}

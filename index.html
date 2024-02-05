@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn  -->
+    <script
+      src="https://kit.fontawesome.com/0176ceb3ce.js"
+      crossorigin="anonymous"></script>
+    <!-- page title  -->
+    <title>Quote generator app - Js mini project</title>
+    <!-- style sheet css  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- javascript cdn  -->
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- quote box start  -->
+    <div class="quote-box">
+      <!-- heading l-2 -->
+      <h2>Quote of the Day</h2>
+      <!-- quote start  -->
+      <blockquote id="quote">
+        <img src="https://i.gifer.com/ZZ5H.gif" width="20px" alt="" /> Loading
+        ..
+      </blockquote>
+      <!-- quote end -->
+      <!-- author start  -->
+      <span id="author">
+        <img src="https://i.gifer.com/ZZ5H.gif" width="15px" alt="" /> Loading
+        ..
+      </span>
+      <!-- author end -->
+      <!-- buttons start  -->
+      <div>
+        <!-- next button  -->
+        <button onclick="getQuote(api_url)">New Quote</button>
+        <!-- tweet button  -->
+        <button onclick="tweetQuote()">
+          <i class="fa-brands fa-twitter"></i> Tweet
+        </button>
+      </div>
+      <!-- buttons end -->
+    </div>
+    <!-- quote box end -->
+  </body>
+</html>
